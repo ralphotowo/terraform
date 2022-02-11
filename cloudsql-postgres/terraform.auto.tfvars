@@ -1,4 +1,4 @@
 
 region = "europe-west2"
-project_id = "ochero-8279"
+project_id = "webapp-prod-341021"
 root_passwd = "Kahgiechogiecex3ahdi"

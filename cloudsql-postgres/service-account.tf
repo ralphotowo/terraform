@@ -1,8 +1,8 @@
-# resource "google_service_account" "cloudsql_sa" {
-#   account_id   = "cloudsql-datascience"
-#   display_name = "CloudSQL Data-Science Service Account"
-#   project = var.project_id
-# }
+resource "google_service_account" "cloudsql_sa" {
+  account_id   = "cloudsql-datascience"
+  display_name = "CloudSQL Data-Science Service Account"
+  project = var.project_id
+}
 
 # resource "google_project_iam_custom_role" "cloudsql_datascience" {
 #   role_id     = "cloudsql_datascience"
