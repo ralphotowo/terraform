@@ -1,3 +1,7 @@
+variable "GOOGLE_CREDENTIALS" {
+  type  = string
+}
+
 variable "project_id" {
   type  = string
 }
