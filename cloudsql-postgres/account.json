@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ochero-8279",
+  "private_key_id": "d8075de396a4535fd51d2458841911b59e71f110",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBU24Xa/mPqXc+\nwiCARJyAWMdW8bqwUGyyqdOiRhGgIm2jIc1VnE9mRV/c9QIP4BBSXDUF9FE+VeLz\nxuu6T4OJUBGxQsJr/KnQ02GVn+8OoJn3SJxSlnVEljjoOdTrCbDQNMblTAjRacOW\n9nrlJKmyMeFTh4GA4eVJzbPLfOA2vO+p02h1qM4VayiXL4EA1ayGpr4pco+s+Vnd\nSBdDxPq5lYbOVcQH793LQqxPzhBPBQQ+OprMRB+KoGucPTrzgD8jit6pC8XL4TgJ\n8PoAGHdkPA2vXma/Aih7wrl/mNxSvpCJrZW1cK3l5cpdwKJpWjSRXIRREiEOkv6E\nYikTB55vAgMBAAECggEAFC15MJr1lap6MS6BcOcjBHxU9edN9RK30vVJtZv66/ab\n8H+vLDp1HmIAQudpkIRHf9PIOaJfNmfaw6x6ibFnM6uL5S89a+2XlchHh56FN3Fz\nZcK02iPXrScWsm+SyvicdTwE7wVpaDNR6uLilHb9T9rH6fgbKqX+e0kBH9cdRGkd\n+LyyF/ypaG9XCsMODkss45TpJr1nCYLg2kCJoKz1cjvY5P1gMggUtskhQV4d711Z\n4ei/98u8DY0FF0K7eMvdJbnwk9VC+PrhmT+zHqBPEDGxt5CZY8ALOkkahx8CNabm\nZeoe5O7bMGgnf8typBbfgs7nkkduiZwqupOqwi7q9QKBgQD/S0+ZWuB2yZySfdTl\nhUag8ZUxCXe6EGOuS/AKHLriVoqoEwD20rEjz+K8PMWRcef/UKqbnBThmf5385tc\nTBgbGqjE7UCDXD9CF9cZRtEZbI+cCqat82col2bqsM+aXRAi5IJCOktEy7byVMX2\nXFBfYa4C5rQkAYoAqdV85Peo7QKBgQDB3EKLXoUyTAKA1lbNjtynVvLr/oGp5STy\nvakSF0rWcPqY8DqgrkbNIvVlnfNlClz2+7koVISBByEQWQPfm3L4sSjfybXCYvAw\nyXbJWft/W4qdOPgIrJzth0rxIz+/mVW6EdwfA5eHwb0fTvyKH3UsSD+t4H70hcBQ\n/h7dWc6FSwKBgFk6f1XAV5ftG5Zv+ItIK8lw5o4/GuOjetOeowVFyWP2j3vzOHEM\nbvFvZXYZX4xYXZf1H8xHn1zCsBhIwtJdnkdK6BX8PoIrKcj2AC5LfCYAtaj6aAuA\neVvMnyIELmtrf4pSh9yR92DSOt00GATlewn7YBCPhgLXrt5QfderR4x5AoGARBXA\nhUQwEYcihe9BUzZuhpMCBCJBldK1lE9KFuF5VjEdwiL05EPw99DkUMkVl5H5LoEf\n+WsdkldXpG8u7hShX3iQ+2/TVy76XpgTEQp6SrNyzl8Ytasx/jY6+s+/buJCenQV\nVAsl5/cCHgHWrgf4VhIV01J6JBTpg0iMvH7zClsCgYEAyw5as1dvnqP4fq1mbDr2\nSpzyFychxk1EhnvcfD1ljLNvzjAM31DHXQ9Vq2Rui/dPYFtBt+GHmXLsIUUi3DHs\nl4K/nhhryGkUj7brXlVA+xgfDAr3hYTU195E58/9NkzK/DinyP2HMa+vN3pGHnCo\n0sN3AEiOazrdAlHIOn60ahc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ochero-gcloud-sa@ochero-8279.iam.gserviceaccount.com",
+  "client_id": "118357914511723277214",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ochero-gcloud-sa%40ochero-8279.iam.gserviceaccount.com"
+}
