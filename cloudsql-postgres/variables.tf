@@ -8,10 +8,19 @@ variable "project_id" {
 
 variable "region" {
   type  = string
-  default = "europe-west2"
 }
-
-variable "root_passwd" {
+variable "zone" {
   type  = string
 }
 
+variable "db_name" {
+  type  = string
+}
+
+variable "db_version" {
+  type  = string
+}
+
+variable "db_root_passwd" {
+  type  = string
+}
