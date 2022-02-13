@@ -9,6 +9,7 @@ resource "google_sql_database_instance" "datascience-apps-db" {
   settings {
     tier                = "${var.db_tier}"
     disk_type           = "PD_SSD"
+    disk_autoresize     = true
     availability_type   = "REGIONAL"
     activation_policy   = "ALWAYS"
 
@@ -26,4 +27,11 @@ resource "google_sql_database_instance" "datascience-apps-db" {
       start_time        = "00:00"
     }
   }
+}
+
+resource "google_sql_user" "users" {
+  name      = "${var.db_name}"
+  instance  = google_sql_database_instance.datascience-apps-db.name
+  password  = "$(var.db_root_passwd)"
+  project   = "${var.project_id}"
 }
