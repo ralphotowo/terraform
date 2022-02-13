@@ -3,7 +3,7 @@ resource "google_sql_database_instance" "datascience-apps-db" {
   database_version      = "${var.db_version}"
   project               = "${var.project_id}"
   region                = "${var.region}"
-  root_password         = "$(var.root_passwd)"
+  root_password         = "$(var.db_root_passwd)"
   deletion_protection   = false
 
   settings {
