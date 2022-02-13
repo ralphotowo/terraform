@@ -1,4 +1,4 @@
-resource "google_sql_database_instance" "master" {
+resource "google_sql_database_instance" "datascience-apps-db" {
   name                  = "${var.db_name}"
   database_version      = "${var.db_version}"
   project               = "${var.project_id}"
