@@ -7,7 +7,7 @@ resource "google_sql_database_instance" "datascience-apps-db" {
   deletion_protection   = false
 
   settings {
-    tier                = "db-n1-standard-4"
+    tier                = "${var.db_tier}"
     disk_type           = "PD_SSD"
     availability_type   = "REGIONAL"
     activation_policy   = "ALWAYS"
@@ -21,29 +21,9 @@ resource "google_sql_database_instance" "datascience-apps-db" {
       hour              = 0
     }
 
-
     backup_configuration {
       enabled           = true
       start_time        = "00:00"
     }
-
   }
-
-
 }
-
-# resource "google_sql_database_instance" "master" {
-#   name             = "master-instance"
-#   database_version = "POSTGRES_11"
-#   region           = "${var.region}"
-
-#   settings {
-#     tier = "db-n1-standard-4"
-#     root_password = var.root_passwd
-#     deletion_protection = false
-#     availability_policy = "REGIONAL"
-#     disk_size = "200"
-#     disk_type = "PD_SSD"
-#     }
-
-# }
