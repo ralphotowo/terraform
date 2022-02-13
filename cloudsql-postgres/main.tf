@@ -35,7 +35,7 @@ resource "google_sql_database_instance" "datascience-apps-db" {
 }
 
 resource "google_sql_user" "users" {
-  name      = "${var.db_name}"
+  name      = "${var.db_user}"
   instance  = google_sql_database_instance.datascience-apps-db.name
   password  = "$(var.db_root_passwd)"
   project   = "${var.project_id}"
