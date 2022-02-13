@@ -15,7 +15,7 @@ resource "google_sql_database_instance" "datascience-apps-db" {
 
     ip_configuration {
       ipv4_enabled      = true
-
+    
       authorized_networks {
           name          = "ralph"
           value         = "102.220.190.21/32"
