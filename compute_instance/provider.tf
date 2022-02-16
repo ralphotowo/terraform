@@ -8,6 +8,8 @@ terraform {
 }
 
 provider "google" {
-
+  project = "webapp-prod-341021"
+  region = "us-central1"
+  zone = "us-central1-c"
 
 }
