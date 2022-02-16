@@ -3,7 +3,7 @@ terraform {
     organization = "ochero"
 
     workspaces {
-      name = "terraform"
+      name = "webapp-production-cloudsql-datascience-apps"
     }
   }
 }

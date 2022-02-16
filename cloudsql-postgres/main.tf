@@ -1,42 +1,29 @@
-resource "google_sql_database_instance" "datascience-apps-db" {
-  name                  = "${var.db_name}"
-  database_version      = "${var.db_version}"
-  project               = "${var.project_id}"
-  region                = "${var.region}"
-  root_password         = "$(var.db_root_passwd)"
-  deletion_protection   = false
+module "datascience-sql-db" {
+  source  = "GoogleCloudPlatform/sql-db/google//modules/postgresql"
+  version = "9.0.0"
 
-  settings {
-    tier                = "${var.db_tier}"
-    disk_type           = "PD_SSD"
-    disk_autoresize     = true
-    availability_type   = "REGIONAL"
-    activation_policy   = "ALWAYS"
+  name       = var.name
+  tier       = var.tier
+  zone       = var.zone
+  region     = var.region
+  project_id = var.project_id
 
-    ip_configuration {
-      ipv4_enabled      = true
-    
-      authorized_networks {
-          name          = "ralph"
-          value         = "102.220.190.21/32"
-      }
-    }
+  user_name           = var.user_name
+  user_password       = var.user_password
+  enable_default_user = var.enable_default_user
 
-    maintenance_window {
-      day               = 7
-      hour              = 0
-    }
+  disk_type        = var.disk_type
+  disk_autoresize  = var.disk_autoresize
+  database_version = var.database_version
 
-    backup_configuration {
-      enabled           = true
-      start_time        = "00:00"
-    }
-  }
-}
+  activation_policy = var.activation_policy
+  availability_type = var.availability_type
 
-resource "google_sql_user" "users" {
-  name      = "${var.db_user}"
-  instance  = google_sql_database_instance.datascience-apps-db.name
-  password  = "$(var.db_root_passwd)"
-  project   = "${var.project_id}"
+  ip_configuration     = var.ip_configuration
+  deletion_protection  = var.deletion_protection
+  # backup_configuration = var.backup_configuration
+
+  maintenance_window_day  = var.maintenance_window_day
+  maintenance_window_hour = var.maintenance_window_hour
+
 }
