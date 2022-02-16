@@ -4,7 +4,7 @@ variable "GOOGLE_CREDENTIALS" {
 
 variable "name" {
   type = string
-  default = "datascience-apps"
+  default = "datascience-apps-2"
 }
 
 variable "tier" {
@@ -19,7 +19,7 @@ variable "region" {
 
 variable "zone" {
   type = string
-  default = "us-east-1c"
+  default = "us-east1-c"
 }
 
 variable "user_name" {
