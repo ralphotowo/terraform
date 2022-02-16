@@ -4,7 +4,7 @@ variable "GOOGLE_CREDENTIALS" {
 
 variable "name" {
   type = string
-  default = "datascience-apps-2"
+  default = "datascience-apps-3"
 }
 
 variable "tier" {
