@@ -19,7 +19,7 @@ variable "region" {
 
 variable "zone" {
   type = string
-  default = "us-east-1c"
+  default = "us-east1-c"
 }
 
 variable "user_name" {
