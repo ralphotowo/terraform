@@ -53,7 +53,7 @@ variable "database_version" {
 
 variable "deletion_protection" {
   type  = bool
-  default = true
+  default = false
 }
 
 variable "disk_type" {
