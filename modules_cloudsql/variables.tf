@@ -90,7 +90,7 @@ variable "ip_configuration" {
       }
     ]
     ipv4_enabled        = true
-    private_network     = default
+    private_network     = "projects/${var.project_id}/global/networks/${var.vpc_name}"
     require_ssl         = false
   }
 }
