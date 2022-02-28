@@ -89,7 +89,7 @@ variable "ip_configuration" {
         value = "102.220.190.21"
       }
     ]
-    ipv4_enabled        = true
+    ipv4_enabled        = false
     private_network     = "projects/webapp-prod-341021/global/networks/default"
     require_ssl         = false
   }
