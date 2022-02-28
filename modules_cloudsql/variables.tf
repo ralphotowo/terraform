@@ -90,7 +90,7 @@ variable "ip_configuration" {
       }
     ]
     ipv4_enabled        = true
-    private_network     = "default"
+    private_network     = default
     require_ssl         = false
   }
 }
