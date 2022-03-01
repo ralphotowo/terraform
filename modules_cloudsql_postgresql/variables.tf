@@ -120,8 +120,8 @@ variable "backup_configuration" {
     start_time                     = "01:00"
     location                       = null
     point_in_time_recovery_enabled = false
-    transaction_log_retention_days = null
-    retained_backups               = null
-    retention_unit                 = null
+    transaction_log_retention_days = 7
+    retained_backups               = 7
+    retention_unit                 = "COUNT"
   }
 }
