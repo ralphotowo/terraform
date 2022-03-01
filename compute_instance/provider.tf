@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
   project = "webapp-prod-341021"
-  region = "us-central1"
-  zone = "us-central1-c"
+  region = "us-east1"
+  zone = "us-east1-c"
 
 }
