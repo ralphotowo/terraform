@@ -81,15 +81,15 @@ variable "ip_configuration" {
   default = {
     authorized_networks = [
       {
-        name = "ETL VM"
-        value = "35.185.37.105/32"
+        name = "VM"
+        value = "34.148.27.69/32"
       },
       {
         name = "Ralph"
         value = "102.220.190.21/32"
       }
     ]
-    ipv4_enabled        = false
+    ipv4_enabled        = true
     private_network     = "projects/webapp-prod-341021/global/networks/default"
     require_ssl         = false
   }
