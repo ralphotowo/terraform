@@ -26,7 +26,7 @@ module "datascience-sql-db" {
   maintenance_window_day  = var.maintenance_window_day
   maintenance_window_hour = var.maintenance_window_hour
 
-  depends_on = [module.datascience-sql-db]
+#  depends_on = [module.datascience-sql-db]
 }
 
 module "private-service-access" {
