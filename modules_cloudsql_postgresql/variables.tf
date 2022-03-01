@@ -82,11 +82,11 @@ variable "ip_configuration" {
     authorized_networks = [
       {
         name = "ETL VM"
-        value = "35.185.37.105"
+        value = "35.185.37.105/32"
       },
       {
         name = "Ralph"
-        value = "102.220.190.21"
+        value = "102.220.190.21/32"
       }
     ]
     ipv4_enabled        = false
