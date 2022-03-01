@@ -21,11 +21,12 @@ module "datascience-sql-db" {
 
   ip_configuration     = var.ip_configuration
   deletion_protection  = var.deletion_protection
-  # backup_configuration = var.backup_configuration
+  backup_configuration = var.backup_configuration
 
   maintenance_window_day  = var.maintenance_window_day
   maintenance_window_hour = var.maintenance_window_hour
 
+  depends_on = [module.datascience-sql-db]
 }
 
 module "private-service-access" {
