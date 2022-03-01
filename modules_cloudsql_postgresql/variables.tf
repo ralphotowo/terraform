@@ -24,7 +24,7 @@ variable "zone" {
 
 variable "user_name" {
   type = string
-  default = "gcp-user"
+  default = "gcpdata"
 }
 
 variable "user_password" {
