@@ -1,3 +1,9 @@
+module "private-service-access" {
+  source      = "GoogleCloudPlatform/sql-db/google//modules/private_service_access"
+  project_id  = var.project_id
+  vpc_network = var.vpc_network
+}
+
 module "datascience-sql-db" {
   source  = "GoogleCloudPlatform/sql-db/google//modules/postgresql"
   version = "9.0.0"
@@ -27,10 +33,4 @@ module "datascience-sql-db" {
   maintenance_window_hour = var.maintenance_window_hour
 
 #  depends_on = [module.datascience-sql-db]
-}
-
-module "private-service-access" {
-  source      = "GoogleCloudPlatform/sql-db/google//modules/private_service_access"
-  project_id  = var.project_id
-  vpc_network = "default"
 }

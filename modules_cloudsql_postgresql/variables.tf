@@ -4,7 +4,7 @@ variable "GOOGLE_CREDENTIALS" {
 
 variable "name" {
   type = string
-  default = "datascience-apps-3"
+  default = "instance-1"
 }
 
 variable "tier" {
@@ -34,6 +34,11 @@ variable "user_password" {
 variable "project_id" {
   type = string
   default = "webapp-prod-341021"
+}
+
+variable "vpc_network" {
+  type = string
+  default = "default"
 }
 
 variable "activation_policy" {
@@ -120,7 +125,7 @@ variable "backup_configuration" {
     start_time                     = "01:00"
     location                       = null
     point_in_time_recovery_enabled = false
-    transaction_log_retention_days = 7
+    transaction_log_retention_days = "0"
     retained_backups               = 7
     retention_unit                 = "COUNT"
   }
