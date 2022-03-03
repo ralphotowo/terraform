@@ -2,7 +2,7 @@ data "google_compute_global_address" "google-managed-services-range" {
 #  source      = "GoogleCloudPlatform/sql-db/google//modules/private_service_access"
   name        = "google_compute_global_address"
   project  = var.project_id
-  network = var.vpc_network
+#  network = var.vpc_network
 }
 
 module "datascience-sql-db" {
