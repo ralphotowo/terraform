@@ -1,4 +1,4 @@
-data "private-service-access" {
+data "private-service-access" "google-managed-services-default" {
 #  source      = "GoogleCloudPlatform/sql-db/google//modules/private_service_access"
   project_id  = var.project_id
   vpc_network = var.vpc_network
