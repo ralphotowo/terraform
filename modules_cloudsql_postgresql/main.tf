@@ -1,5 +1,6 @@
-data "private-service-access" "google-managed-services-default" {
+data "google_compute_global_address" "google-managed-services-range" {
 #  source      = "GoogleCloudPlatform/sql-db/google//modules/private_service_access"
+  name        = "google_compute_global_address"
   project_id  = var.project_id
   vpc_network = var.vpc_network
 }
